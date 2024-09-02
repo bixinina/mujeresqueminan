@@ -1,0 +1,168 @@
+@font-face {
+  font-family: 'Clash Display';
+  src: url('../FONTS/CLASHDISPLAYOTF/ClashDisplay-Regular.otf') format('opentype');
+}
+
+body {
+    background-color: #eff1faeb; /* Gris panza de burro */
+    margin: 0;
+    padding: 0;
+    font-style:oblique;
+    overflow: hidden;
+  }
+
+  /*  
+
+ 
+#header {
+    text-align: center;
+    padding: 20px;
+  }
+
+
+#title {
+  margin: 0;
+  color: whitesmoke;
+}
+
+.subtitles {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  } 
+  
+  .subtitle {
+    color: #1E90FF;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+  } */
+  
+  #content {
+    position: relative;
+    height: 80vh;
+  }
+  
+  .coal-image {
+    position: absolute;
+    width: 1000px;
+    cursor: pointer;
+  }
+  
+  .coal-image:nth-child(1) {
+    top: 10%;
+    left: 20%;
+  }
+  
+  .coal-image:nth-child(2) {
+    top: 30%;
+    left: 60%;
+  }
+  
+  .coal-image:nth-child(3) {
+    top: 50%;
+    left: 40%;
+  }
+  
+  .coal-image:nth-child(4) {
+    top: 80%;
+    left: 3%;
+  }
+  
+  .coal-image:nth-child(5) {
+    top: 69%;
+    left: 80%;
+  }
+  
+
+.phrase {
+    position: absolute;
+    font-size: 100px;
+    color: rgb(0, 0, 0);
+    font-family: 'Roslindale Display Condensed';
+    font-style: normal;  
+  }
+  
+  .phrase:nth-child(1) {
+    top: 5%;
+    left: 30%;
+  }
+  
+  .phrase:nth-child(2) {
+    top: 80%;
+    left: 70%;
+  }
+  
+  .phrase:nth-child(3) {
+    top: 70%;
+    left: 40%;
+  }
+  
+  .phrase:nth-child(4) {
+    top: 10%;
+    left: 5%;
+  }
+  
+  .phrase:nth-child(5) {
+    top: 6%;
+    left: 80%;
+  }
+
+/* Style for buttons in the four corners */
+.corner-button {
+  position: fixed;
+  width: max-content;
+  font-size: 60px;
+  font-weight: lighter;
+  text-align: center;
+  border: 2px solid #000; /* White border with 2px thickness */
+  background-color: transparent; /* No fill color */
+  color: #000; /* White text */
+  border-radius: 100%; /* Circular border */
+  padding: 100px; /* Adjust the padding to maintain circular shape */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Optional: smooth transition for hover effect */
+}
+
+.corner-button:hover {
+  background-color: #bbc1db; /* Optional: white background on hover */
+  color: #000; /* Optional: black text on hover */
+}
+
+/* Positioning the buttons in the four corners */
+.corner-button.top-left {
+  top: 20px;
+  left: 20px;
+}
+
+.corner-button.top-right {
+  top: 20px;
+  right: 20px;
+}
+
+.corner-button.bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+
+.corner-button.bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
+
+#feedback-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Clash Display', sans-serif;
+  font-size: 500px;
+  color: #000;
+  text-align: center;
+  /*background-color: rgba(0, 0, 0, 0.7);  Optional: semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 9999; /* Ensure it's on top of everything */
+}
+
+  

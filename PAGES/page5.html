@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="icon" href="../favicon.png" type="image/x-icon">
+  <style>
+     @font-face {
+        font-family: 'Clash Display';
+        src: url('../FONTS/CLASHDISPLAYOTF/ClashDisplay-Regular.otf') format('opentype');
+    }
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+    canvas {
+      display: block;
+    }
+
+    #completionScreen {
+    font-family: 'Clash Display', sans-serif;
+      font-size: 100px;
+      color: #000;
+      border-radius: 10px;
+      padding: 20px;
+      display: none; /* Initially hidden */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 10; /* Ensure it is on top */
+    }
+
+    #exitButton {
+        transform: translate(-50%, -50%);
+        margin-top: 50px;
+        position: absolute;
+        width: max-content;
+        font-family: 'Ranade', sans-serif;
+        font-size: 50px;
+        font-weight: lighter;
+        text-align: center;
+        border: 2px solid #000; /* White border with 2px thickness */
+        background-color: transparent; /* No fill color */
+        color: #000; /* White text */
+        border-radius: 50%; /* Circular border */
+        padding: 100px; /* Adjust the padding to maintain circular shape */
+        cursor: pointer; /* Pointer cursor on hover */
+        transition: background-color 0.3s ease, color 0.3s ease; /* Optional: smooth transition for hover effect */
+    }
+
+    #exitButton:hover {
+        background-color: #bbc1db; /* Optional: white background on hover */
+        color: #000; /* Optional: black text on hover */
+}
+    
+  </style>
+</head>
+<body>
+    <div id="completionScreen">
+        <h1>muchas gracias <3 mujer minera siempre</h1>
+        <button id="exitButton">volver a empezar</button>
+    </div>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
+    <script src="../SCRIPTS/script5.js"></script>
+</body>
+</html>
+
+

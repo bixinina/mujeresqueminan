@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roslindale Display Condensed';
+    background: #eff1faeb;
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2; /* Ensure it stays above the videos */
+}
+
+.rotating-text, .final-words {
+    z-index: 3; /* Text elements stay above everything */
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1; /* Keep videos in the background */
+    pointer-events: none; /* Prevent videos from blocking text interaction */
+}
+
+.video-container video {
+    position: absolute;
+    width: 20vw; /* Adjust as needed */
+    height: 20vh; /* Adjust as needed */
+    object-fit: cover;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease-in-out;
+}
+
+.rotating-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+    text-align: center;
+    width: 40%;
+    background: rgba(239, 241, 250, 0.5); /* Black background with 50% transparency */
+    color: rgb(5, 5, 5); /* Text color to stand out against the background */
+    padding: 20px; /* Add some padding around the text */
+    border-radius: 10px; /* Optional: rounded corners for the background */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    backdrop-filter: blur(8px); /* Apply blur effect to the background */
+}
+
+
+.final-words {
+    position: absolute;
+    bottom: 10%; /* Adjust this value to change vertical positioning */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em; /* Change font size */
+    text-align: center;
+    width: 80%; /* Adjust width */
+    display: none;
+    color: #333; /* Adjust color */
+}
+
+.final-words a {
+    color: black;
+    text-decoration: none;
+    margin: 0 100px;
+    font-family: 'Clash Display';
+}
+
+.final-words a:hover {
+    text-decoration: underline;
+}
+
+.word {
+    position: absolute;
+    color: rgb(13, 3, 3);
+    font-weight: light;
+    filter: blur(1px);
+    opacity: 1;
+}
+
+.word.animate {
+    animation: animate linear forwards;
+}
+
+/* CSS for the Continue button */
+.continue-button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    font-family: 'Ranade', sans-serif;
+    font-size: 60px;
+    font-weight: lighter;
+    text-align: center;
+    border: 2px solid #000; /* White border with 2px thickness */
+    background-color: transparent; /* No fill color */
+    color: #000; /* White text */
+    border-radius: 50%; /* Circular border */
+    padding: 100px; /* Adjust the padding to maintain circular shape */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Optional: smooth transition for hover effect */
+}
+
+.continue-button:hover {
+    background-color: #bbc1db; /* Optional: white background on hover */
+    color: #000; /* Optional: black text on hover */
+}
+
+
+@keyframes animate {
+    0% {
+        transform: var(--initial-transform);
+        opacity: 1;
+        filter: blur(1px);
+    }
+    100% {
+        transform: var(--final-transform);
+        opacity: 0;
+        filter: blur(var(--final-blur));
+    }
+}

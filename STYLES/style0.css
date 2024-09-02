@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'Ranade';
+    src: url('../FONTS/RANADEOTF/Ranade-Regular.otf') format('woff2'), /* Adjust the path and format as necessary */
+         url('../FONTS/RANADEOTF/Ranade-Bold.otf') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roslindale Display Condensed';
+    background: #eff1faeb; /* Keep the linear gradient for the entire background */
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+h1 {
+    width: 100%;
+    color: #000;
+    font-size: 48vw;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 1200vh;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    padding: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper-404 {
+    position: absolute;
+    top: 0;
+    width: 400vw;
+    height: 100vh;
+    will-change: transform;
+}
+
+.card {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#card1 {
+    top: 50%;
+    left: 20%;
+}
+
+#card2 {
+    top: 25%;
+    left: 40%;
+}
+
+#card3 {
+    top: 45%;
+    left: 60%;
+}
+
+#card4 {
+    top: 15%;
+    left: 80%;
+}
+
+.outro {
+    position: absolute;
+    top: 150vh;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #eff1faeb;
+    
+}
+
+.outro h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    font-family: 'Ranade', sans-serif;
+    font-size: 120px;
+    font-weight: medium;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+
+.outro button {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    font-family: 'Ranade', sans-serif;
+    font-size: 60px;
+    font-weight: lighter;
+    text-align: center;
+    border: 2px solid #000; /* White border with 2px thickness */
+    background-color: transparent; /* No fill color */
+    color: #000; /* White text */
+    border-radius: 50%; /* Circular border */
+    padding: 100px; /* Adjust the padding to maintain circular shape */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Optional: smooth transition for hover effect */
+}
+
+.outro button:hover {
+    background-color: #bbc1db; /* Optional: white background on hover */
+    color: #000; /* Optional: black text on hover */
+}
+
+.front-layer,
+.back-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.front-layer img,
+.back-layer img {
+    position: absolute;
+    width: 15%; /* Make images smaller and square-like */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Optional: Add some rounding to the images */
+}
+
+.front-layer img {
+    box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.5);
+}
+
+.back-layer img {
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
+}
+
+.front-layer img:nth-child(1) {
+    top: 5%;
+    left: 20%;
+}
+
+.front-layer img:nth-child(2) {
+    top: 50%;
+    left: 5%;
+}
+
+.front-layer img:nth-child(3) {
+    bottom: 10%;
+    left: 30%;
+}
+
+.front-layer img:nth-child(4) {
+    bottom: 40%;
+    right: 5%;
+}
+
+.front-layer img:nth-child(5) {
+    top: 10%;
+    right: 30%;
+}
+
+.back-layer img:nth-child(1) {
+    top: -5%;
+    right: 10%;
+}
+
+.back-layer img:nth-child(2) {
+    bottom: 2%;
+    right: 15%;
+}
+
+.back-layer img:nth-child(3) {
+    top: 0;
+    left: 0;
+}
