@@ -15,7 +15,7 @@ function preload() {
   coalStone2 = loadImage('../PAGINA1/IMG/coalStone2.png');
   coalStone3 = loadImage('../PAGINA1/IMG/coalStone3.png');
   coalStone4 = loadImage('../PAGINA1/IMG/coalStone4.png');
-  coalStone5 = loadImage('../PAGINA1/IMG/coalStone5.png'); // New coalStone5
+  coalStone5 = loadImage('../PAGINA1/IMG/CoalStone5.png'); // New coalStone5
   pickaxe = loadImage('../PAGINA1/IMG/newCursor.png');
   
   sound1 = loadSound('../PAGINA1/SOUNDS/son1.mp3');
