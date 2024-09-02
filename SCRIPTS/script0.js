@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ScrollTrigger.create({
         trigger: ".wrapper-404",
         start: "top top",
-        end: "+=1200px",  // Extended duration
+        end: "+=1200vh",  // Extended duration
         scrub: 1,
         pin: true,
         pinSpacing: true,  // Keep spacing for smooth transitions
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ScrollTrigger.create({
             trigger: card.id,
             start: "top center",  // Adjusted to trigger slightly later
-            end: "+=1200px",
+            end: "+=1200vh",
             scrub: 1,
             onUpdate: (self) => {
                 gsap.to(card.id, {
@@ -111,4 +111,6 @@ document.addEventListener("DOMContentLoaded", function () {
         back.style.transform = `translate(${x / sBack}%, ${y / sBack}%)`;
     });
 });
+
+
 
