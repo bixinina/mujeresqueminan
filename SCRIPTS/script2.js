@@ -115,7 +115,8 @@ function showButtons() {
     buttonContainer.id = 'corner-buttons';
 
     // Array of pages to link to
-    const pages = ['../PAGES/Page3.html', '../PAGES/Page3.html', '../PAGES/Page3.html', '../PAGES/Page3.html'];
+    const pages = ['Page3.html', 'Page3.html', 'Page3.html', 'Page3.html'];
+
 
     // Shuffle the array to randomize the links
     for (let i = pages.length - 1; i > 0; i--) {
