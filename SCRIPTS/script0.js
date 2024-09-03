@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let timeout;
 
     function redirectToPage1() {
-        window.location.href = '../PAGES/page1.html';
+        window.location.href = 'PAGES/page1.html';
     }
 
     function resetTimer() {
