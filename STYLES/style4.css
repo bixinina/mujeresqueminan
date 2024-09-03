@@ -28,23 +28,21 @@ html, body {
     padding: 1em;
     display: flex;
     flex-direction: column; /* Arrange header content vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
+    justify-content: center; 
+    align-items: center; 
     color: var(--color-text);
-    font-family: 'Clash Display', sans-serif; /* Apply the Clash Display font */
-    text-align: center; /* Center text horizontally */
-}
+    font-family: 'Roslindale Display Condensed';
+    text-align: center;
+    
 
 .header p {
-    font-size: 400px;
+    font-size: 60px;
     font-weight: 400;
-    text-transform: uppercase;
-    margin: 0; /* Remove default margin */
+    margin: 0;
 }
 
 p {
     font-weight: 400;
-    text-transform: uppercase;
 }
 
 img, video {
@@ -91,12 +89,13 @@ img, video {
     transition: opacity 0.3s, transform 0.3s;
 }
 
-/* CSS for making the video larger */
+/* adjust video */
+    
 .img-container video {
     margin-top: 70%;
     margin-bottom: 75%;
     width: 200%; /* Ensure video takes up full width of container */
-    height: 70vh; /* Adjust the height as needed (e.g., 70% of viewport height) */
+    height: 70vh; /*  the height as needed */
     object-fit: cover; /* Maintain aspect ratio and cover container */
 }
 
@@ -165,7 +164,7 @@ img, video {
 }
 
 .outro button {
-    /* Button styles */
+
     font-family: 'Ranade', sans-serif;
     font-size: 60px;
     font-weight: lighter;
