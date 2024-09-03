@@ -22,7 +22,7 @@ function startInactivityTimeout() {
     }, feedbackTime);
 
     inactivityTimeout = setTimeout(() => {
-        window.location.href = 'Page3.html'; // Redirect to Page3.html after inactivity
+        window.location.href = 'page3.html'; // Redirect to Page3.html after inactivity
     }, inactivityTime);
 }
 
