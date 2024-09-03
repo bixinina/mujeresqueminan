@@ -28,21 +28,22 @@ html, body {
     padding: 1em;
     display: flex;
     flex-direction: column; /* Arrange header content vertically */
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
     color: var(--color-text);
-    font-family: 'Roslindale Display Condensed';
-    text-align: center;
-    
+    font-family: 'Roslindale Display Condensed'; /* Apply the Clash Display font */
+    text-align: center; /* Center text horizontally */
+}
 
 .header p {
     font-size: 60px;
     font-weight: 400;
-    margin: 0;
+    margin: 0; /* Remove default margin */
 }
 
 p {
     font-weight: 400;
+
 }
 
 img, video {
@@ -89,13 +90,12 @@ img, video {
     transition: opacity 0.3s, transform 0.3s;
 }
 
-/* adjust video */
-    
+/* CSS for making the video larger */
 .img-container video {
     margin-top: 70%;
     margin-bottom: 75%;
     width: 200%; /* Ensure video takes up full width of container */
-    height: 70vh; /*  the height as needed */
+    height: 70vh; /* Adjust the height as needed (e.g., 70% of viewport height) */
     object-fit: cover; /* Maintain aspect ratio and cover container */
 }
 
@@ -164,7 +164,7 @@ img, video {
 }
 
 .outro button {
-
+    /* Button styles */
     font-family: 'Ranade', sans-serif;
     font-size: 60px;
     font-weight: lighter;
@@ -189,6 +189,11 @@ img, video {
     background-color: #bbc1db;
     color: #000;
 }
+
+
+
+
+
 
 
 
